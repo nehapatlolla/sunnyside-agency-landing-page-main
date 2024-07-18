@@ -217,6 +217,37 @@
         font-size: 18px;
         padding: 15px;
       }
+      .footer {
+        width: 100%;
+        height: 60vh;
+        text-align: center;
+      }
+      .footer > .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      .footer-image {
+        width: 50%;
+        height: 20vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+      }
+      #milk-bottles {
+        background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+      }
+      #orange-slice {
+        background-image: url("images/mobile/image-gallery-orange.jpg");
+      }
+      #cone {
+        background-image: url("images/mobile/image-gallery-cone.jpg");
+      }
+      #sugar-cubes {
+        background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+      }
     </style>
   </head>
   <body>
@@ -299,7 +330,30 @@
           <div>Business Owner</div>
         </div>
       </section>
-      <footer></footer>
+      <footer class="footer">
+        <div class="images">
+          <div class="footer-image" id="milk-bottles"></div>
+          <div class="footer-image" id="orange-slice"></div>
+          <div class="footer-image" id="cone"></div>
+          <div class="footer-image" id="sugar-cubes"></div>
+        </div>
+        <div class="sunnyside">Sunny side</div>
+        <nav>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </nav>
+        <div class="icons">
+          <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="#"
+            ><img src="images/icon-instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="#"
+            ><img src="images/icon-pinterest.svg" alt="Pinterest"
+          /></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
